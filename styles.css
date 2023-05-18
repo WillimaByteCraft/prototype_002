@@ -53,6 +53,7 @@ header::after {
 	padding: 1.6rem;
 	transform: translateX(-29rem);
 	transition: transform 0.6s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+	pointer-events: all;
 }
 .active .nav {
 	transform: translateX(0);
@@ -147,11 +148,7 @@ section{
 		color: rgb(150, 135, 50);
 		margin-bottom: 450px;
 	}
-	.text h1{
-		font-family: sans-serif;
-		font-size: 70px;
-		margin-top: 80px;
-	}
+	
 	.text p{
 		margin: 20px auto;
 		font-weight: 100;
@@ -223,9 +220,9 @@ section{
 	
 	}
 	.second-m{
-		width: 65%;
-		height: 390px;
-		margin: -16px 0px 0px;
+		width: 100%;
+		height: 550px;
+		margin: auto;
 		position: relative;
 		border: 0 solid #e5e7eb;
 		border-radius: 16px;
@@ -251,7 +248,53 @@ section{
 }
 /* The Socials*/
 
-	
+/* Footer*/
+.footer{
+	padding-block: 50px;
+	padding-bottom: 25px;
+	background-color: #151515;
+	color: #666878;
+}
+.footer_container{
+	max-width: 1160px;
+	margin: auto;
+	padding: 0 15px;
+}
+.footer-top{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+.footer-title{
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.footer-list{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.footer-list-link{
+	transition: color 0.25s;
+}
+.footer-list-link:hover{
+	color: #fff;
+}
+.footer-divider{
+	margin-block: 25px;
+	border: none;
+	border-top: 1px solid rgba(252, 255, 255, 0.1);
+}
+.footer-bottom{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.footer-list-bottom{
+	flex-direction: row;
+}
 /* Main content simulation end*/
 @media screen and (max-width: 450px) {
 	.hamburger {
@@ -274,7 +317,7 @@ section{
 }
 @media screen and (max-width: 800px) {
 	.text{
-		margin-top: 250px;
+		margin-top: auto;
 	}
 	.text h1{
 		font-size: 4.5rem;
@@ -292,4 +335,10 @@ section{
 		margin-right: 1px;
 		margin-top: 1px;
 	}
+	
 }
+@media screen and (orientation: landscape){
+	.text{
+		margin: auto;
+	}
+} 
