@@ -339,6 +339,6 @@ section{
 }
 @media screen and (orientation: landscape){
 	.text{
-		margin: auto;
+		margin-top: auto;
 	}
 } 
